@@ -1,0 +1,231 @@
+//TITLES DE CADA SECTION
+.headertitle {
+	$self : &;
+	@extend %boxFull;
+	    margin: 0 0 60px;
+		position: relative;
+	    z-index: 999999;
+	@include m('2'){
+			margin: 0;
+			background-color: hsla(255,255,255, 0.35);
+			
+	}
+	@include m('3'){
+			margin: 0;
+			float: right$i;
+			background-color: hsla(0,0%,80%,0.18);
+	}
+	@include e('border'){
+		@include befores($brColor: #fff, $isCenter: true);
+		    border-color: $blue2;
+		    border-style: solid;
+		    border-width: 0 4px 4px 4px;
+		    display: block;
+		    margin: 0 auto 30px;
+		    min-height: 94px;
+		    position: relative;
+		    top: 0;
+			max-width: 232px;
+			padding: 30px;
+
+			@include m('white'){
+				@include befores($brColor: #173e77, $isCenter: true);
+				
+					border-color: $white;
+				    border-style: solid;
+				    border-width: 0 4px 4px 4px;
+				    display: block;
+				    margin: 0 auto 30px;
+				    min-height: 94px;
+				    position: relative;
+				    top: 0;
+					max-width: 232px;
+			}
+
+			@include m('2'){
+				margin: 0$i;
+				border: 0$i;
+				border-left: 4px solid $white$i;
+
+			}
+			@include m('3'){
+				height: 160px$i;
+				max-width:90px$i;
+
+			}
+
+
+	}
+
+
+	@include e('title'){
+		@extend %boxFull;
+			@include fonts(600, 40);
+				color: $black;
+				font-size: 30px;
+				line-height: 1;
+				margin: 0;
+				text-align: center;
+				text-transform: uppercase;
+				position: relative;
+    			top: -38px;
+    			left: -1px;
+
+
+			@include m('white'){
+				color: $white;
+			}
+
+			@include m('2'){
+				@include span(.7);
+					float: right;
+					margin: 78px 0 0;
+
+
+			}
+			@include m('right'){
+				@include span(.7);
+					float: right;
+					margin: 78px 0 0;
+
+			}
+
+    }
+
+
+    @include e('subtitle'){
+    	@extend %boxFull;
+    		@include fonts(600,16);
+    			@include afters($brColor: #173e77, $isCenter: true);
+			    	color: $black;
+			    	margin: 0;
+			    	text-align: center;
+				@include m('white'){
+					@include afters($brColor: #fff, $isCenter: true);
+						color: $white;
+				}
+				@include m('2'){
+					@include span(.5);
+						display: none;
+						@include respond-to(sm){
+					    	@include afters($brColor: #fff);					
+							float: right;
+							margin: 61px 0 0;
+							padding-left: 30px;
+							display: block;
+					}
+				}
+
+				@include m('left'){
+					@include span(.5);
+					float: left;
+					margin: 78px 0 0;
+					padding-right: 30px;
+					padding-left: 0;
+					text-align: right;
+
+					&:after{
+						display: none;
+					}
+				}
+				
+			}
+
+ 
+    @include e('group'){
+    	@include span(.51);
+    	text-align: left;
+    	color: #173e77;
+
+    	@include m('2'){
+			@include span(.36);    	
+				text-align: center;	
+    	}
+    }
+	
+	@include m('2'){
+		@include e('border', $self){
+			@include beforestwo($brColor: #fff, $isRight: true);
+			border: 0;
+			border-right: 4px solid #173e77;
+			padding: 0;
+			max-width: 120px;
+			height: 150px;
+			display: inline-block;
+			margin-bottom: 0;
+			margin-left: 25%;
+
+		}
+	}
+
+	@include m('3'){
+		@include e('border', $self){
+			@include beforestree( $Width: 232px, $brColor: #ccc, $isRight: false);
+		}	
+	}
+}
+
+.scrollOn{
+	background: $white;
+	color: $blue2;
+    z-index: 999999999999999;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+	height: 100px;
+	transition: all 0.5s;
+
+	.header__brand{
+		bottom: -38px$i;
+	}
+	@include respond-to(md){
+		.header__brand{
+			bottom: -27px$i;
+		}
+	}
+	.header__logo{
+		color: $blue2;
+		border: 3px solid $blue2;
+	}
+	.header__name{
+		color: $blue2;
+	}
+	.header__menu{
+		top:99px;
+	}
+	@include respond-to(md){
+		.header__menu ul{
+			margin: 39px auto;
+		}
+	}
+	.header__menu ul a{
+		color: $blue2$i;
+		height: 100px;
+	}
+	.header__redes{
+		top: 26px;
+	}
+	.header__redes i{
+		background: $blue2;
+		color: $white;
+	}
+	.header__toggle{
+		margin: 20px 3px;
+		background: $blue2;
+		
+		span{
+			
+			
+			&:before{
+				background: $white;
+			}
+			&:after{
+				background: $white;
+			}
+		}
+
+	}
+
+}
+.scrollOff{
+	background: transparent;
+	transition: all 0.5s;
+}

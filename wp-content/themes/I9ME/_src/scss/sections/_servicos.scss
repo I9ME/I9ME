@@ -1,0 +1,314 @@
+.servicos{
+	@extend %boxFull;
+   		background: $blue2;
+   		margin-top: 90px;
+   		position: relative;
+
+   		@include e('layertop'){
+   			@include span(1);
+   				background: $blue2;
+
+   		}
+
+   		@include e('layerbottom'){
+   			@include span(1);
+   				background-color: #fff$i;
+   				display: inline-block;
+    			min-height: 529px;
+				background-image: url(../images/bg_lapis.png);
+   				background-repeat: no-repeat;
+				background-position: 16% 72%;
+   				//background-size: contain;
+				background-attachment: fixed;
+
+   		}
+
+   		@include e('boxleft'){
+   			@include span(1);
+
+				@include respond-to(sm){
+					@include span(.5);
+	   					height: auto;
+	   					min-height: 529px;
+
+				}
+			@include m('web'){
+				@include span(.5);
+					margin:0;
+					min-height: 695px;
+					height: auto;
+					background: transparent;
+			}
+   		}
+   		@include e('lapisparallax'){
+			 	width: 500px;
+			    display: inline-block;
+			    background: url(../images/lapis.png) no-repeat;
+			    height: 403px;
+			    background-position: 55% 100%;
+			    position: absolute;
+			    
+			    margin-left: -500px;
+			    left: 111%;
+    			margin-left: -500px;
+    			top: 43%;
+   			@include respond-to(sm){
+			    left: 50%;
+			    top: 25%;
+   			}
+   			@include respond-to(md){
+				top: 25%;
+   			}
+   		}
+   		@include e('sombralapis'){
+
+   			@include respond-to(sm){
+   			        width: 40%;
+				    height: 277px;
+				    background: url(../images/sombra.png) no-repeat;
+				    background-position: 95%;
+				    position: absolute;
+				    top: -27%;
+				    margin-top: -67px;
+				    display: block;
+    				left: 0;
+			    	//opacity: 0;
+			    	//transform: translateX(20px);
+					//transition: all 0.3s ease-in-out;
+
+			    	&.is-showing{
+			    		opacity: 1;
+			    		transform: translateX(0px);
+			    	}	
+   			}
+   			
+   		}
+   		@include e('phoneparallax'){
+
+   			@include respond-to(sm){
+			    width: 500px;
+			    display: inline-block;
+			    background: url(../images/smartPhone.png) no-repeat;
+			    height: 580px;
+			    background-position: 55% 100%;
+			    position: absolute;
+			    right: 10%;
+			    margin-left: -500px;
+			    top: 15%;
+   			}
+   		}
+   		@include e('sombraphone'){
+
+   			@include respond-to(sm){
+   			    width: 40%;
+			    height: 607px;
+			    background: url(../images/smartPhone_bg.png) no-repeat;
+			    background-position: top;
+			    position: absolute;
+			    top: -560px;
+			    margin-top: -517px;
+			    display: block;
+			    right: 100px;
+   			}
+   		}
+
+		@include e('boxright'){
+			@include span(1);
+
+				@include respond-to(sm){
+	   				@include span(.5);
+	   					min-height: 529px;
+	   					height: auto;
+	   			}
+	   			@include m('web'){
+	   				@include span(.5);
+	   				float: right$i;
+	   				height: auto;
+	   				min-height: 685px;
+	   				margin: 0;
+	   			}
+   		}
+
+		@include e('lista'){
+   			@include span(1);
+
+   				margin: 45px -57px 75px;
+   		}
+
+   		@include e('item'){
+   			@include span(.4);
+
+   				display: block;
+   				float: right;
+
+	   			figure{
+	   				margin: 0 0 30px;
+	   				padding: 20px 10px;
+	   				text-align: center;
+	   			}
+   		}
+
+
+		@include e('logotipos'){
+
+	   			background: url(../images/logotipos-blue.png)no-repeat 19px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/logotipos-white.png)no-repeat 19px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+   		@include e('papelaria'){
+
+	   			background: url(../images/papelaria-blue.png)no-repeat 19px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/papelaria-white.png)no-repeat 19px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+   		@include e('anuncios'){
+
+	   			background: url(../images/anuncios-blue.png)no-repeat 24px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/anuncios-white.png)no-repeat 24px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+   		@include e('ilustracoes'){
+
+	   			background: url(../images/ilustracoes-blue.png)no-repeat 19px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/ilustracoes-white.png)no-repeat 19px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+   		@include e('websites'){
+
+	   			background: url(../images/websites-blue.png)no-repeat 19px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/websites-white.png)no-repeat 19px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+   		@include e('ecommerce'){
+
+	   			background: url(../images/ecommerce-blue.png)no-repeat 19px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/ecommerce-white.png)no-repeat 19px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+   		@include e('campanhas'){
+
+	   			background: url(../images/campanhas-blue.png)no-repeat 19px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/campanhas-white.png)no-repeat 19px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+   		@include e('consultorias'){
+
+	   			background: url(../images/consultorias-blue.png)no-repeat 19px;
+				height: 90px;
+			    width: 90px;
+			    display: inline-block;
+			    border: 1px solid #aaa;
+	    		border-radius: 50px;
+
+   			&:hover{
+				@extend %transitionAll;
+   				background: url(../images/consultorias-white.png)no-repeat 19px;
+   				background-color: $blue2;
+
+		    	}
+   		}
+
+
+		@include e('smalltitle'){
+			@include fonts(600,20);
+				color: $blue2;
+				margin: 0;
+		}
+
+		@include e('smallcontent'){
+			@include fonts(300,18);
+				margin: 0;
+		}
+
+	@include e('boxinfo'){
+		@include span(1);
+
+	}
+
+	@include e('web'){
+		@include span(1);
+		display: inline-block;
+		background-color: #ccc;
+		height: 685px;
+		position: relative;
+    	
+
+	}
+	
+	
+
+
+
+
+
+}

@@ -1,0 +1,94 @@
+.footer {
+    @extend %boxFull;
+        position: relative;
+
+
+    @include e('layertop'){
+        background-color: #003793;
+        padding: 0;
+
+        @include respond-to(sm){
+            padding: 60px 0;
+        }
+
+
+    }
+    @include e('title'){
+        border-bottom: 1px solid #000;
+        color: #fff;
+        display: block;
+        padding-bottom: 15px;
+
+    }
+    @include e('bloco'){
+        @include span(1);
+
+        a{
+            color: #0087EA;
+        }
+
+        @include respond-to(sm){
+            @include span(.20);
+                padding-right: 30px;
+        }
+    }
+
+
+    @include e('iframe'){
+        @include span(1);
+            margin-bottom: 20px;
+
+        @include respond-to(sm){
+            @include span(.37);
+                float: right;
+                margin: 56px 0 0;
+        }
+    }
+
+    @include e('layerbottom'){
+        background-color: #0b293f;
+        min-height: 145px;
+        padding: 53px 0px;
+
+    }
+    @include e('brand'){
+        @include span(1);
+            text-align: center;
+            color: #fff;
+
+        img{
+            vertical-align: middle;
+        }
+
+        span{
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+
+        @include respond-to(md){
+            @include span(.20);
+        }
+    }
+    @include e('copyright'){
+        @include span(1);
+            margin: 25px 0 0;
+            color: #fff;
+            text-align: center;
+        span{
+            vertical-align: middle;
+        }
+        strong{
+            color: #0073c0;
+        }
+
+        @include respond-to(md){
+            @include span(.8);
+                margin: 0;
+                text-align: right;
+        }
+    }
+
+
+      
+}

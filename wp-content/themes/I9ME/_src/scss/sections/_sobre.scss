@@ -1,0 +1,38 @@
+.sobre{
+	@extend %boxFull;
+		position: relative;
+		background: $blue2;
+
+		@include e('boxleft'){
+			@include span(1);
+
+			@include respond-to(sm){
+				@include span(.35);
+					background: url(../images/bg-sobre-i9me.png);
+					height: 461px;
+				    //background-attachment: fixed;
+				    //background-repeat: no-repeat;
+				    //background-position: 0% 71%;
+			}
+		}
+
+		@include e('play'){
+			@include span(.60);
+				background: $blue2;
+				text-align: center;
+				height: 284px;
+
+				a{
+					color: #fff;
+					display: inline-block;
+    				margin: 12% 0;
+    				vertical-align: middle;
+    				@include fonts(700, 88);
+				}
+				span{
+					color: #fff;
+					vertical-align: middle;
+					@include fonts(700, 30);
+				}
+		}
+}
