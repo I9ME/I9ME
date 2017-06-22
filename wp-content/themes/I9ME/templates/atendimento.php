@@ -15,7 +15,7 @@
 					<i class="fa fa-envelope" aria-hidden="true"></i><span>contato@i9me.com.br</span>
 				</div>
 				<div class="atendimento__fone">
-					<i class="fa fa-phone" aria-hidden="true"></i><span>(85) 4042-08000</span>
+					<i class="fa fa-phone" aria-hidden="true"></i><span><strong>(85) 4042-08000</strong></span>
 				</div>
 				<div class="atendimento__endereco">
 					<i class="fa fa-map-marker fa2" aria-hidden="true"></i><span>R. leda pereira, Nº 534,<br/> sala 05 A - Fortaleza-CE <br/> CEP: 60821-572</span>

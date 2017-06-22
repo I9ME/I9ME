@@ -1,13 +1,13 @@
 .newsletter{
 	@extend %boxFull;
-	  background-color: #005290;
-   	  padding: 38px 0;
+	  background-color: $blue9;
+      padding: 60px 0;
 	
 	@include e('info'){
 		@include span(1);
 
 		@include respond-to(sm){
-			@include span(.33);
+			@include span(.30);
 
 		}
 	}
@@ -35,23 +35,33 @@
 					border: 0;
 					border-radius: 0;
 					background-color: #4080ff;
-					color: #fff;
+					color: $white;
 					text-align: center;
 				}
 	}
 	@include e('redes'){
 		@include span(1);
 			margin: 60px 0 0;
-			text-align: center;	
+			text-align: center;
+			float: right;
+			ul{
+				text-align: right;
+				margin: 0;
+				li{
+					display: inline-block$i;
+				}
+			}
+
 			i{
-				background-color: #fff;
+				background-color: $white;
 			    border-radius: 20px;
-			    height: 34px;
-			    width: 34px;
-			    text-align: center;
-			    padding: 7px 0px;
+			    color: $blue9;
 			    font-size: 20px;
+			    height: 34px;
 			    margin-right: 5px;
+			    padding: 7px 0px;
+			    text-align: center;
+			    width: 34px;
 			}
 		@include respond-to(sm){
 			@include span(.2);
@@ -61,11 +71,16 @@
 		}
 	}
 	@include e('title'){
-		color: #fff;
+		@include fonts(600,22);
+		color: $white;
+		letter-spacing: 3px;
+		margin: 0;
+
 	}
 	@include e('subtitle'){
-		color: #fff;
-		font-size: 12px;
+		@include fonts(500,13);
+		color: $white;
+		letter-spacing: 2px
 	}
 	@include e(''){}
 	

@@ -20,9 +20,16 @@
 			</ul>
 			<ul class="footer__bloco">
 				<h3 class="footer__title">Contatos</h3>
-				<li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> <strong>(85)3025-0000</strong></a></li>
-				<li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> <strong>(85)99862-4149</strong></a></li>
-				<li><a href="#">Atendimento</a></li>
+					<li class="footer__fones--d"><div><i class="fa fa-volume-control-phone" aria-hidden="true"></i> <strong>(85)3025-0000</strong></div></li>
+					<li class="footer__fones--d"><div><i class="fa fa-whatsapp" aria-hidden="true"></i> <strong>(85)99862-4149</strong></div></li>
+				
+					<li class="footer__fones"><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> <strong>(85)3025-0000</strong></a></li>
+					<li class="footer__fones"><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> <strong>(85)99862-4149</strong></a></li>
+					
+					<?php  wp_nav_menu( array(
+            		'theme_location'  => 'menu_2', 
+            		'menu_class'      => 'menu__nav ',
+            		'container_class' => 'footer__menu'.$css.'')); ?>
 			</ul>
 			<div class="footer__iframe">
 				
@@ -34,10 +41,10 @@
 		<div class="container">
 			<div class="footer__brand">
 				<img src="wp-content/themes/I9ME/assets/images/i9me.png" alt="">
-				<span>Design & Web</span>
+				<span>Web & Design</span>
 			</div>
 			<div class="footer__copyright">
-				<span>Copyright © 2017 <strong>I9ME Design & Web.</strong> Todos os direitos reservados.</span>
+				<span>Copyright © 2017 <strong>I9ME Web & Design.</strong> Todos os direitos reservados.</span>
 			</div>
 		</div>
 	</div>

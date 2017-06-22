@@ -73,9 +73,12 @@
   @include e('menu'){ 
     @include respond-to(md){
       display: inline-block;
-      width: 70%;
-          position: inherit;
-    float: left!important;
+      width: auto;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-54%) translateX(-50%);
+      position: absolute;
+      float: left!important;
       //position: relative;
       //left: 0;
       //top: 0;
@@ -232,7 +235,7 @@
         right: 17px;
       }
       i{
-        background: #fff;
+        background: $white;
         border-radius: 18px;
         color: #003ba5;
         font-size: 15px;

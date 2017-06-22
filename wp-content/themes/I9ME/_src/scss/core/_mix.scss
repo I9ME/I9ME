@@ -275,19 +275,19 @@ $break-large: 1400px;
 
 }
 //mixin para before de titulos 4.
-@mixin beforesfourleft( $Width: 232px, $brColor:  #173e77){
+@mixin beforesfourleft( $Width: 232px, $brColor: $blue4){
   &:before {
-    border-width: 4px 0 4px 4px;
+    border-width: 2px 0 2px 2px;
     border-style: solid;
-    border-color: #173e77!important;
+    border-color: $blue4!important;
     content: "";
     display: block;
     left: -54px!important;
     margin-right: auto;
     margin-left: auto;
-    padding: 57px 0!important;
+    padding: 58px 0!important;
     position: absolute;
-    top: -4px!important;
+    top: -3px!important;
     width: 54px;
 
    }
@@ -295,9 +295,9 @@ $break-large: 1400px;
 }
 
 //mixin para before de titulos 4.
-@mixin beforesfourright( $Width: 232px, $brColor:  #173e77){
+@mixin beforesfourright( $Width: 232px, $brColor: $blue4){
   &:before {
-    border-width: 4px 4px 4px 0;
+    border-width: 2px 2px 2px 0;
     content: "";
     right: -54px!important;
     left: inherit$i;

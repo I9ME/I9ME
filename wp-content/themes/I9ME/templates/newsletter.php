@@ -1,7 +1,7 @@
 <section class="newsletter">
 	<div class="container">
 		<div class="newsletter__info">
-			<p class="newsletter__title">Lorem ipsum dolor sit amet, consectetur</p>
+			<p class="newsletter__title">Lorem ipsum dolor sit am</p>
 				<span class="newsletter__subtitle">Lorem ipsum dolor sit amet, consectetur</span>
 		</div>
 		<div class="newsletter__form">
@@ -10,10 +10,12 @@
 			</form>
 		</div>
 		<div class="newsletter__redes">
-			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+	            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+	            <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+			</ul>
 		</div>
 	</div>
 </section>

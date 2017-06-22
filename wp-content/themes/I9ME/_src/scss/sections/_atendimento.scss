@@ -22,7 +22,7 @@
 		@include e('groupend'){
 			@include span(1);
 				padding: 2% 6% 6%;
-				background: #0043c7;
+				background: $blue2;
 				box-shadow:  10px 1px 11px 0px #000;
 				color: $white;
 				line-height: 50px;
@@ -31,11 +31,19 @@
 					display: inline-block;
 					margin-left: 3%;
 					text-align: left;
+					letter-spacing: 2px;
+					@include fonts(400,14);
+
+					strong{
+						
+						@include fonts(700,14);
+
+					}
 				}
 
 				@include respond-to(sm){
 			    	height: 306px;
-			    	padding: 3%;
+			    	padding: 3% 6%;
 					
 				}
 
@@ -70,7 +78,8 @@
 			
 				.form{
 					margin: 0;
-					
+					@include fonts(500,12);
+					text-transform: uppercase;
 					.btn{
 						position: absolute;
 					    width: 36px;
@@ -119,19 +128,20 @@
 				input[type="submit"]{
 					margin: 25px 0;
 				    font-size: 0;
-				    background: url(../images/send.png);
+				    background: url(../images/send-mail.png);
 				    background-color: transparent;
 				    display: block;
 				    border-right: 0;
 					border-left: 0;
-					height: 50px;
+					height: 27px$i;
 				    position: absolute;
 				    display: block;
+				    width: 35px$i;
 
 				    &:hover{
-				    	    background: url(../images/send.png) -35px 0px;
-						    height: 32px;
-						    width: 37px;
+				    	    background: url(../images/send-mail-hover.png);
+						    height: 27px;
+						    width: 35px;
 
 				    }
 

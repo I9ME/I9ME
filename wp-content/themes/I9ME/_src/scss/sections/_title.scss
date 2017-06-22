@@ -7,16 +7,16 @@
 	    z-index: 999999;
 	@include m('2'){
 			margin: 0;
-			background-color: hsla(255,255,255, 0.35);
+		
 			
 	}
 	@include m('3'){
 			margin: 0;
 			float: right$i;
-			background-color: hsla(0,0%,80%,0.18);
+			
 	}
 	@include e('border'){
-		@include befores($brColor: #fff, $isCenter: true);
+		@include befores($brColor: $white, $isCenter: true);
 		    border-color: $blue2;
 		    border-style: solid;
 		    border-width: 0 4px 4px 4px;
@@ -29,7 +29,7 @@
 			padding: 30px;
 
 			@include m('white'){
-				@include befores($brColor: #173e77, $isCenter: true);
+				@include befores($brColor: $blue2, $isCenter: true);
 				
 					border-color: $white;
 				    border-style: solid;
@@ -60,7 +60,7 @@
 
 	@include e('title'){
 		@extend %boxFull;
-			@include fonts(600, 40);
+			@include fonts(700, 40);
 				color: $black;
 				font-size: 30px;
 				line-height: 1;
@@ -95,20 +95,21 @@
 
     @include e('subtitle'){
     	@extend %boxFull;
-    		@include fonts(600,16);
-    			@include afters($brColor: #173e77, $isCenter: true);
+    		@include fonts(400,16);
+    			@include afters($brColor: $blue2, $isCenter: true);
 			    	color: $black;
+			    	letter-spacing: 2px;
 			    	margin: 0;
 			    	text-align: center;
 				@include m('white'){
-					@include afters($brColor: #fff, $isCenter: true);
+					@include afters($brColor: $white, $isCenter: true);
 						color: $white;
 				}
 				@include m('2'){
 					@include span(.5);
 						display: none;
 						@include respond-to(sm){
-					    	@include afters($brColor: #fff);					
+					    	@include afters($brColor: $white);
 							float: right;
 							margin: 61px 0 0;
 							padding-left: 30px;
@@ -135,7 +136,7 @@
     @include e('group'){
     	@include span(.51);
     	text-align: left;
-    	color: #173e77;
+    	color: $blue2;
 
     	@include m('2'){
 			@include span(.36);    	
@@ -145,9 +146,9 @@
 	
 	@include m('2'){
 		@include e('border', $self){
-			@include beforestwo($brColor: #fff, $isRight: true);
+			@include beforestwo($brColor: $white, $isRight: true);
 			border: 0;
-			border-right: 4px solid #173e77;
+			border-right: 4px solid $blue2;
 			padding: 0;
 			max-width: 120px;
 			height: 150px;
@@ -189,11 +190,12 @@
 		color: $blue2;
 	}
 	.header__menu{
-		top:99px;
+		transform: translateY(-55%) translateX(-50%);
 	}
 	@include respond-to(md){
 		.header__menu ul{
-			margin: 39px auto;
+			padding: 8% 0 6%;
+    		margin: 0;
 		}
 	}
 	.header__menu ul a{

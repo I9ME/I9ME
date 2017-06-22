@@ -58,6 +58,7 @@ function tema_setup() {
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
     'menu_1' => 'Menu Principal',
+    'menu_2' => 'Menu Footer',
     
   ));
 

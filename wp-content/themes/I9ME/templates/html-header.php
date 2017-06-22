@@ -12,7 +12,7 @@
                 <span class="header__letter header--e">E</span>
             </h1>
             <div class="header__name">
-                <span class="header__wd">Design & Web</span>
+                <span class="header__wd">Web & Design</span>
             </div>
         </div>
 

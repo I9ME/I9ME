@@ -68,8 +68,8 @@
 			border: 0 solid;
 
 			@include respond-to(sm){
-				@include beforesfourleft($brColor:  #173e77);
-					border-width: 4px 4px 4px 0;
+				@include beforesfourleft($brColor:  $blue4);
+					border-width: 2px 2px 2px 0;
 			    	border-style: solid;
 			    	border-color: $white;
 					display: block;
@@ -79,8 +79,8 @@
 
 				@include m('right'){
 
-					@include beforesfourright($brColor:  #173e77);
-					border-width: 4px 0 4px 4px;
+					@include beforesfourright($brColor: $blue4);
+					border-width: 2px 0 2px 2px;
 					margin: 30% 0 30% 7%;
 				}
 			}
@@ -89,14 +89,14 @@
 	@include e('title'){
 		@include fonts(600,25);
 		margin: 0;
-		color: #fff;
+		color: $white;
 		text-transform: uppercase;
 
 	}
 	@include e('subtitle'){
-		@include fonts(600,16);
+		@include fonts(400,16);
 		margin: 0;
-		color: #fff;
+		color: $white;
 
 	}
 
