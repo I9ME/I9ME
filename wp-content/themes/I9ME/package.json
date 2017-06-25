@@ -1,6 +1,6 @@
 {
-  "name": "febracis",
-  "description": "Projeto do portal da Febracis",
+  "name": "i9me",
+  "description": "Projeto da I9ME",
   "version": "0.0.1",
   "main": "gulpfile.js",
   "devDependencies": {
@@ -20,7 +20,7 @@
     "jeet": "^7.0.0",
     "sprity": "^1.0.8"
   },
-  "author": "Nick Lima",
+  "author": "Bruno Lima",
   "license": "ISC",
   "dependencies": {},
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/cvtt-dev/febracis.git"
+    "url": "https://github.com/I9ME/I9ME.git"
   },
-  "homepage": "https://bitbucket.org/cvtt-dev/febracis#readme"
+  "homepage": "https://github.com/I9ME/I9ME/blob/master/README.md"
 }

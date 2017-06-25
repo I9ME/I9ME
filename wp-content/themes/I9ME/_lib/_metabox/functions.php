@@ -1,8 +1,8 @@
 <?php
 /*
 * Custom Function's Metabox
-* Desenvolvedor: Nicholas Lima
-* Email: nick.lima.wp@gmail.com
+* Desenvolvedor: Bruno Lima
+* Email: brunolimadevelopment@gmail.com
 */
 
 //RESETA O CAMPO "CURSO" CASO O EVENTO NÃO SEJA ATRIBUIDO A UM CURSO

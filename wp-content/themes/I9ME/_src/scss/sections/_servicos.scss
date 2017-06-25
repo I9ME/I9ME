@@ -17,15 +17,18 @@
     			min-height: 529px;
 				background-image: url(../images/bg_lapis.png);
    				background-repeat: no-repeat;
-				background-position: 16% 72%;
+   				background-position: -9% 100%;
    				//background-size: contain;
-				background-attachment: fixed;
+   				@include respond-to(md){
+					background-attachment: fixed;
+					background-position: 11% 102%;
+				}
 
    		}
 
    		@include e('boxleft'){
    			@include span(1);
-
+				height: 60px;
 				@include respond-to(sm){
 					@include span(.5);
 	   					height: auto;
@@ -131,15 +134,21 @@
 
 		@include e('lista'){
    			@include span(1);
+				margin: 5px 0 75px;
 
-   				margin: 45px -57px 75px;
+				@include respond-to(md){
+   					margin: 45px -57px 75px;
+   				}
    		}
 
    		@include e('item'){
-   			@include span(.4);
-
+			@include span(.5);   			
    				display: block;
    				float: right;
+
+			@include respond-to(md){
+   				@include span(.4);
+			}
 
 	   			figure{
 	   				margin: 0 0 30px;

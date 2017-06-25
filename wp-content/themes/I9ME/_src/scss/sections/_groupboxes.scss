@@ -109,9 +109,13 @@
 			}
 
 			@include m('servicos'){
-				@include span(.8);
+				@include span(1);				
 					float: right$i;
 					text-align: center;
+				
+				@include respond-to(md){
+					@include span(.8);
+				}
 			}
 	}
 }

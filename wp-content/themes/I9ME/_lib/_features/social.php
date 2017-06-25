@@ -1,8 +1,8 @@
 <?php
 /*
 * Redes Sociais - Tema
-* Desenvolvedor: Nicholas Lima
-* Email: nick.lima.wp@gmail.com
+* Desenvolvedor: Bruno Lima
+* Email: brunolimadevelopment@gmail.com
 */
 
 function custom_tema_social( $wp_customize ) {

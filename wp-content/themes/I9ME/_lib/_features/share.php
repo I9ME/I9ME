@@ -1,8 +1,8 @@
 <?php
 /*
 * Share Functions
-* Desenvolvedor: Nicholas Lima
-* Email: nick.lima.wp@gmail.com
+* Desenvolvedor: Bruno Lima
+* Email: brunolimadevelopment@gmail.com
 */
 
 //=========================================================================================

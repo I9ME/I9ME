@@ -54,12 +54,12 @@ add_action( 'admin_init', 'remove_widgets_painel' );
 //ADD WIDGET SUPORTE CONVERTTE
 function setup_suporte_widgets() {
     global $wp_meta_boxes;
-    wp_add_dashboard_widget('custom_help_widget', 'Nick Lima e Allef Bruno | Suporte', 'suporte_dashboard_help');
-    //add_meta_box('custom_help_widget', 'Convertte Web Intelligence | Suporte', 'suporte_dashboard_help', 'dashboard', 'side', 'high');
+    wp_add_dashboard_widget('custom_help_widget', 'Bruno Lima e Diogo Soares | Suporte', 'suporte_dashboard_help');
+    //add_meta_box('custom_help_widget', 'I9ME - Web & Design | Suporte', 'suporte_dashboard_help', 'dashboard', 'side', 'high');
 }
 
 function suporte_dashboard_help() {
-    echo 'Se você tiver qualquer dúvida ou precisar de ajuda, por favor, entre em contato conosco através do e-mail <a href="mailto:nick.lima.wp@gmail.com">nick.lima.wp@gmail.com</a> ou <a href="mailto:allefbr21@gmail.com">allefbr21@gmail.com</a>.';
+    echo 'Se você tiver qualquer dúvida ou precisar de ajuda, por favor, entre em contato conosco através do e-mail <a href="mailto:brunolimadevelopment@gmail.com">brunolimadevelopment@gmail.com</a> ou <a href="mailto:diogo@diogosoares.com.br">diogo@diogosoares.com.br</a>.';
 }
 
 add_action('wp_dashboard_setup', 'setup_suporte_widgets');

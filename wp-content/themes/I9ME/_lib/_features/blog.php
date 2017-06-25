@@ -1,8 +1,8 @@
 <?php
 /*
-* Blog Functins
-* Desenvolvedor: Nicholas Lima
-* Email: nick.lima.wp@gmail.com
+* Blog Functions
+* Desenvolvedor: Bruno Lima
+* Email: brunolimadevelopment@gmail.com
 */
 
 //=========================================================================================

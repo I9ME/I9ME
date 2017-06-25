@@ -1,8 +1,8 @@
 <?php
 /*
 * CForms Select Functions
-* Desenvolvedor: Nicholas Lima
-* Email: nick.lima.wp@gmail.com
+* Desenvolvedor: Bruno Lima
+* Email: brunolimadevelopment@gmail.com
 */
 function dynamic_select_list($tag, $unused) {
 

@@ -227,7 +227,10 @@ $break-large: 1400px;
     border-color: $brColor$i;
     content: '';
     display: block;
-    left: -112px$i;
+    left: -222px$i;
+    @include respond-to(md){
+      left: -112px$i;
+    }
     margin-right: auto;
     margin-left: auto;
     padding: 10px 0$i;

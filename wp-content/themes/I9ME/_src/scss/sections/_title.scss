@@ -77,9 +77,14 @@
 			}
 
 			@include m('2'){
-				@include span(.7);
+				@include span(1);
 					float: right;
-					margin: 78px 0 0;
+					margin: 37px 0 0;
+
+					@include respond-to(md){
+						@include span(.7);
+						margin: 78px 0 0;
+					}
 
 
 			}
@@ -134,9 +139,18 @@
 
  
     @include e('group'){
-    	@include span(.51);
-    	text-align: left;
-    	color: $blue2;
+		@include span(.18);
+			text-align: center;
+
+
+		@include respond-to(md){
+    		text-align: left;
+    	}
+    		color: $blue2;
+		
+    	@include respond-to(md){
+    		@include span(.51);
+    	}
 
     	@include m('2'){
 			@include span(.36);    	
@@ -148,13 +162,22 @@
 		@include e('border', $self){
 			@include beforestwo($brColor: $white, $isRight: true);
 			border: 0;
-			border-right: 4px solid $blue2;
+			@include respond-to(md){
+				border-right: 4px solid $blue2;
+				height: 119px;
+			}
+			border-right: 0;
 			padding: 0;
-			max-width: 120px;
-			height: 150px;
+			height: 60px;
 			display: inline-block;
 			margin-bottom: 0;
-			margin-left: 25%;
+			margin-left: 0;
+			max-width: 100%;
+			@include respond-to(md){
+				height: 150px;
+				margin-left: 25%;
+				max-width: 120px;
+			}
 
 		}
 	}

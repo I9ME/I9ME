@@ -40,6 +40,9 @@
 				@include fonts(300, 16);
 			}
 		}
+		.owl-dots .owl-dot.active{
+			background-color: $blue2;
+		}
 		@include e('subtitulo'){
 			@include fonts(300, 16);
 			display: block;

@@ -1,8 +1,8 @@
 <?php
 /**
 * Breadcrumbs
-* Desenvolvedor: Nicholas Lima
-* Email: nick.lima.wp@gmail.com
+* Desenvolvedor: Bruno Lima
+* Email: brunolimadevelopment@gmail.com
 * Baseado na função de autoria de Stuart do site The Web Taylor
 * URL do AUtor: https://www.thewebtaylor.com/articles/wordpress-creating-breadcrumbs-without-a-plugin
 */

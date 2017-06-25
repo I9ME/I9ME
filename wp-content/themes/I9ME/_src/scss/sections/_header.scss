@@ -108,7 +108,7 @@
         @include span(1);
         @include respond-to(md){
           width: auto;
-          padding: 0 20px;
+          padding: 0 34px 0 0;
            &:hover{
             background: transparent$i;
            }

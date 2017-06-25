@@ -1,4 +1,4 @@
-.atendimento{
+	.atendimento{
 	$self : &;
 	@extend %boxFull;
 		background: url(../images/bg_atendimento.png);
@@ -84,7 +84,8 @@
 						position: absolute;
 					    width: 36px;
 					    height: 31px;
-					    right: 137px;
+					    right: 110px;
+    					bottom: 172px;
 					}
 				}
 				.form__msg{
@@ -93,7 +94,7 @@
 				.form input:focus, .form select:focus, .form textarea:focus{
 					@extend %transitionAll;
 					border-color: transparent;
-					border-bottom: 2px solid $blue2;
+					border-bottom: 1px solid $blue2;
 					border-right: 0;
 					border-left: 0;
 				}
@@ -101,12 +102,12 @@
 					border-right: 2px solid #fff$i;
 					border-left:  2px solid #fff$i;;
 					border-color: transparent;
-					border-bottom: 2px solid $blue2;
+					border-bottom: 1px solid $blue2;
 				}
 				textarea{
 
-					background: #fff;
-					border-bottom: 2px solid #aaa;
+					background: $white;
+					border-bottom: 1px solid #aaa;
 					height: 70px;
 					min-height: 100%;
 					width: 100%;
@@ -118,7 +119,7 @@
 				input{
 					position: relative;
 					background-color: #fff;
-					border-bottom: 2px solid #aaa;
+					border-bottom: 1px solid #aaa;
 					border-right: 0;
 					border-left: 0;
 					border-radius: 0;
