@@ -132,8 +132,7 @@
 				    background: url(../images/send-mail.png);
 				    background-color: transparent;
 				    display: block;
-				    border-right: 0;
-					border-left: 0;
+				    border: 0;
 					height: 27px$i;
 				    position: absolute;
 				    display: block;
@@ -149,6 +148,11 @@
 				}
 				
 
+				
+				.wpcf7-form .wpcf7-not-valid{
+					padding: 0;
+					height: 33px;
+				}
 
 
 				@include respond-to(sm){

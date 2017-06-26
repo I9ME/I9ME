@@ -18,7 +18,13 @@
 			@include span(.45);
 			
 		}
-		
+			.form{
+				position: relative;
+			    top: -50px;
+				@include e('btn'){
+					position: absolute;
+				}
+			}
 			form{
 				@include span(1);
 
@@ -26,9 +32,25 @@
 					@include span(.8);
 					border: 0;
 					height: 51px;
+					border-radius: 0;
 					padding: 15px;
 				}
-
+				.form input, .form select, .form textarea{
+					background: $white;
+				}
+				input[type="submit"]{
+					@include fonts(600,15);
+					width: 82px;
+				    background-color: #00b6fd;
+				    color: #fff;
+				    text-align: center;
+				    margin: 0;
+				    border-radius: 0;
+				}
+				.fa-paper-plane:before, .fa-send:before{
+					position: relative$i;
+					left: 0$i;
+				}
 				
 			}
 		button{
@@ -83,6 +105,6 @@
 		color: $white;
 		letter-spacing: 2px
 	}
-	@include e(''){}
+	
 	
 }

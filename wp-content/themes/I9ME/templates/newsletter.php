@@ -5,9 +5,12 @@
 				<span class="newsletter__subtitle">Lorem ipsum dolor sit amet, consectetur</span>
 		</div>
 		<div class="newsletter__form">
-			<form action="">
+			<!--<form action="">
 				<input type="text"><button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-			</form>
+			</form>-->
+			<?php 
+					echo do_shortcode('[contact-form-7 id="38" title="newsletter"]');
+				?>
 		</div>
 		<div class="newsletter__redes">
 			<ul>

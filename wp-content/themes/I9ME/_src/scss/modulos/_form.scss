@@ -153,6 +153,8 @@
 		.form-msg--erro {
 			background-color: $erro ;
 			display: block;
+			position: relative;
+    		top: -10px;
 		}
 	}
 
